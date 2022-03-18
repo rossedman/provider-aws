@@ -149,7 +149,7 @@ $ OIDC_PROVIDER=$(aws eks describe-cluster --name "${CLUSTER_NAME}" --region "${
 Create trust relationship for IAM role:
 
 ```console
-$ cat > trust.yaml <<EOF
+$ cat > trust.json <<EOF
 {
   "Version": "2012-10-17",
   "Statement": [
